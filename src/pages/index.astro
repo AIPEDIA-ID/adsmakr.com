@@ -92,11 +92,21 @@ import copy from "../data/copy.json";
 								</div>
 								<div class="col-span-3 grid grid-cols-2 gap-1">
 									{sample.results.map((result) => (
-										<div class="photo-box aspect-square relative bg-white border-2 border-primary-500/20 shadow-sm transition-transform hover:scale-105 duration-300 z-0 hover:z-10">
+										<div
+											class="photo-box aspect-square relative bg-white border-2 border-primary-500/20 shadow-sm transition-transform hover:scale-105 duration-300 z-0 hover:z-10 opacity-0 scroll-zoom-item"
+											style={{
+												animationDelay: `${Math.random() * 0.6}s`,
+											}}
+										>
 											<img
 												src={result.image}
 												class={`w-full h-full object-cover ${result.filter}`}
 											/>
+											<div class="absolute bottom-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+												<span class="bg-yellow-400 text-black px-1.5 py-0.5 text-[8px] font-black rounded shadow-sm border border-black/10">
+													AI
+												</span>
+											</div>
 										</div>
 									))}
 								</div>
@@ -126,7 +136,12 @@ import copy from "../data/copy.json";
 			<div class="grid grid-cols-2 gap-2">
 				{
 					copy.gallery.modes.map((mode) => (
-						<div class="photo-box aspect-square relative group cursor-pointer hover:border-primary-500 transition-all">
+						<div
+							class="photo-box aspect-square relative group cursor-pointer hover:border-primary-500 transition-all opacity-0 scroll-zoom-item"
+							style={{
+								animationDelay: `${Math.random() * 0.6}s`,
+							}}
+						>
 							<img
 								src={mode.image}
 								class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -181,7 +196,7 @@ import copy from "../data/copy.json";
 				</p>
 			</div>
 			<div
-				class="photo-box aspect-video shadow-2xl relative border-4 border-white ring-1 ring-gray-900/5 rounded-xl overflow-hidden"
+				class="photo-box aspect-video shadow-2xl relative border-4 border-white ring-1 ring-gray-900/5 rounded-xl overflow-hidden scroll-zoom-item opacity-0"
 			>
 				<img
 					src={copy.dashboard.image}
@@ -205,6 +220,44 @@ import copy from "../data/copy.json";
 				</div>
 			</div>
 		</section>
+
+		<!-- [SCRIPT & STYLES FOR SCROLL ANIMATION] -->
+		<script>
+			const observerOptions = {
+				root: null,
+				rootMargin: "0px",
+				threshold: 0.2, // Trigger when 20% visible
+			};
+
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("animate-zoom-in");
+						observer.unobserve(entry.target); // Run once
+					}
+				});
+			}, observerOptions);
+
+			document.querySelectorAll(".scroll-zoom-item").forEach((el) => {
+				observer.observe(el);
+			});
+		</script>
+
+		<style>
+			@keyframes zoomIn {
+				from {
+					opacity: 0;
+					transform: scale(0.9);
+				}
+				to {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+			.animate-zoom-in {
+				animation: zoomIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+			}
+		</style>
 
 		<!-- [VALUES: AGITATE & SOLUTION] -->
 		<section>
