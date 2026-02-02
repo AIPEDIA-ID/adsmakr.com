@@ -8,19 +8,15 @@ import copy from "../data/copy.json";
 		<!-- [HERO: PAS - PROBLEM & PROMISE] -->
 		<section class="text-center pt-8">
 			<div
-				class="inline-block px-4 py-1.5 bg-red-50 rounded-lg mb-6 border border-red-100 animate-pulse"
-			>
-				<span
-					class="text-[11px] font-black text-red-600 tracking-[0.2em]"
-					>{copy.hero.warningTag}</span
-				>
-			</div>
+				class="inline-block px-4 py-1.5 rounded-full bg-yellow-50 border border-yellow-200 text-yellow-800 text-xs font-bold tracking-wide mb-6 uppercase shadow-sm"
+				set:html={copy.hero.warningTag}
+			/>
 			<h1
-				class="text-hero mb-6 text-balance text-gray-900"
+				class="text-4xl md:text-6xl font-black text-gray-900 leading-[1.1] mb-6 tracking-tight drop-shadow-sm"
 				set:html={copy.hero.title}
 			/>
 			<p
-				class="text-body-pro mb-8 text-balance px-2 max-w-lg mx-auto"
+				class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed"
 				set:html={copy.hero.description}
 			/>
 			<div class="max-w-xs mx-auto">
@@ -49,21 +45,18 @@ import copy from "../data/copy.json";
 						+4k
 					</div>
 				</div>
-				<p class="text-[10px] font-bold text-gray-500 tracking-widest">
-					{copy.hero.socialProof}
-				</p>
+				<p
+					class="text-[12px] text-gray-500 font-medium"
+					set:html={copy.hero.socialProof}
+				/>
 			</div>
 		</section>
 
 		<!-- [MAGIC GRID: PROOF] -->
 		<section>
 			<div class="text-center mb-8">
-				<h2 class="section-title mb-3">
-					{copy.showcase.title}
-				</h2>
-				<p class="text-subtitle">
-					{copy.showcase.subtitle}
-				</p>
+				<h2 class="section-title mb-3" set:html={copy.showcase.title} />
+				<p class="text-subtitle" set:html={copy.showcase.subtitle} />
 			</div>
 
 			<div class="space-y-10">
@@ -127,10 +120,8 @@ import copy from "../data/copy.json";
 		<!-- [GALLERY MODES] -->
 		<section>
 			<div class="text-center mb-8">
-				<h2 class="section-title mb-3">{copy.gallery.title}</h2>
-				<p class="text-subtitle">
-					{copy.gallery.subtitle}
-				</p>
+				<h2 class="section-title mb-3" set:html={copy.gallery.title} />
+				<p class="text-subtitle" set:html={copy.gallery.subtitle} />
 			</div>
 
 			<div class="grid grid-cols-2 gap-2">
@@ -175,10 +166,11 @@ import copy from "../data/copy.json";
 							<h4 class="text-2xl font-black text-primary-500 mb-2">
 								{item.step}
 							</h4>
-							<h3 class="font-black text-gray-900 text-[15px] tracking-tight leading-snug mb-2">
-								{item.title}
-							</h3>
-							<p class="text-body-sm">{item.desc}</p>
+							<h3
+								class="font-black text-gray-900 text-[15px] tracking-tight leading-snug mb-2"
+								set:html={item.title}
+							/>
+							<p class="text-body-sm" set:html={item.desc} />
 						</div>
 					))
 				}
@@ -190,10 +182,11 @@ import copy from "../data/copy.json";
 			class="bg-gray-50 -mx-6 md:-mx-10 px-6 md:px-10 py-16 border-y border-gray-100"
 		>
 			<div class="text-center mb-8">
-				<h2 class="section-title mb-3">{copy.dashboard.title}</h2>
-				<p class="text-subtitle">
-					{copy.dashboard.subtitle}
-				</p>
+				<h2
+					class="section-title mb-3"
+					set:html={copy.dashboard.title}
+				/>
+				<p class="text-subtitle" set:html={copy.dashboard.subtitle} />
 			</div>
 			<div
 				class="photo-box aspect-video shadow-2xl relative border-4 border-white ring-1 ring-gray-900/5 rounded-xl overflow-hidden scroll-zoom-item opacity-0"
@@ -263,9 +256,10 @@ import copy from "../data/copy.json";
 		<section>
 			<div class="text-center mb-10">
 				<h2 class="section-title mb-3">{copy.benefits.title}</h2>
-				<p class="text-subtitle pb-2">
-					{copy.benefits.subtitle}
-				</p>
+				<p
+					class="text-subtitle pb-2"
+					set:html={copy.benefits.subtitle}
+				/>
 			</div>
 
 			<div class="grid gap-4">
@@ -279,9 +273,10 @@ import copy from "../data/copy.json";
 								/>
 							</div>
 							<div>
-								<h4 class="font-black text-gray-900 text-[15px] tracking-tight leading-snug mb-1">
-									{benefit.title}
-								</h4>
+								<h4
+									class="font-extrabold text-gray-900 text-lg mb-2"
+									set:html={benefit.title}
+								/>
 								<p
 									class="text-body-sm"
 									set:html={benefit.description}
@@ -329,7 +324,10 @@ import copy from "../data/copy.json";
 										{row.agency}
 									</td>
 									<td class="p-4 text-primary-600 bg-primary-50/50">
-										{row.adsmakr}
+										<div
+											class="text-primary-600 bg-primary-50/50 p-2 md:p-4 font-bold rounded-lg border border-primary-100 shadow-sm"
+											set:html={row.adsmakr}
+										/>
 									</td>
 								</tr>
 							))
@@ -349,9 +347,14 @@ import copy from "../data/copy.json";
 				>
 					{copy.bonuses.tag}
 				</span>
-				<h2 class="text-2xl font-black mb-2 text-gray-900">
-					{copy.bonuses.title}
-				</h2>
+				<p
+					class="text-subtitle !max-w-md mx-auto mb-4"
+					set:html={copy.pricing.subtitle}
+				/>
+				<h2
+					class="text-4xl md:text-5xl font-black text-gray-900 mb-8 tracking-tight"
+					set:html={copy.pricing.title}
+				/>
 				<p class="text-body-sm max-w-lg mx-auto">
 					{copy.bonuses.subtitlePre}
 					<strong class="text-gray-900"
@@ -365,16 +368,19 @@ import copy from "../data/copy.json";
 					copy.bonuses.items.map((bonus) => (
 						<div class="bg-gray-50 border border-gray-100 p-5 rounded-xl">
 							<div class="flex justify-between items-start mb-2">
-								<h3 class="font-black text-primary-600 text-sm tracking-wide">
-									{bonus.title}
-								</h3>
-								<span class="bg-white border border-gray-200 text-[9px] px-2 py-0.5 rounded text-gray-600 font-bold">
-									{bonus.value}
-								</span>
+								<h3
+									class="font-black text-primary-600 text-sm tracking-wide"
+									set:html={bonus.title}
+								/>
+								<span
+									class="bg-white border border-gray-200 text-[9px] px-2 py-0.5 rounded text-gray-600 font-bold"
+									set:html={bonus.value}
+								/>
 							</div>
-							<p class="text-xs font-bold text-gray-600 leading-relaxed">
-								{bonus.desc}
-							</p>
+							<p
+								class="text-xs font-bold text-gray-600 leading-relaxed"
+								set:html={bonus.desc}
+							/>
 						</div>
 					))
 				}
@@ -402,10 +408,9 @@ import copy from "../data/copy.json";
 					</div>
 
 					<h3
-						class="text-[10px] font-black tracking-[0.3em] text-gray-400 mb-2 mt-2"
-					>
-						{copy.pricing.subtitle}
-					</h3>
+						class="text-[10px] font-black tracking-[0.3em] text-gray-800 mb-2 mt-2 uppercase"
+						set:html={copy.pricing.subtitle}
+					/>
 
 					<div class="mb-6 mt-4">
 						<span
@@ -442,13 +447,14 @@ import copy from "../data/copy.json";
 								<div class="flex items-start gap-3">
 									<div class="bg-primary-100 rounded-full p-0.5 mt-0.5 shrink-0">
 										<i
-											data-lucide="check"
-											class="w-3 h-3 text-primary-600"
+											data-lucide="check-circle-2"
+											class="w-5 h-5 text-primary-500 shrink-0 mt-0.5"
 										/>
 									</div>
-									<span class="text-[12px] font-bold text-gray-700 leading-snug">
-										{feature}
-									</span>
+									<span
+										class="text-gray-700 font-medium text-sm"
+										set:html={feature}
+									/>
 								</div>
 							))
 						}
@@ -486,9 +492,10 @@ import copy from "../data/copy.json";
 									class="w-5 h-5 text-gray-400 transition-transform duration-300 group-open:rotate-180"
 								/>
 							</summary>
-							<div class="px-5 pb-5 text-body-sm border-t border-gray-100 pt-4 bg-white">
-								{faq.answer}
-							</div>
+							<div
+								class="px-5 pb-5 text-body-sm border-t border-gray-100 pt-4 bg-white"
+								set:html={faq.answer}
+							/>
 						</details>
 					))
 				}

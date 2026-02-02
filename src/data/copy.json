@@ -1,9 +1,9 @@
 {
     "pageTitle": "adsmakr ramadan - Persiapan Iklan Ramadan 2026",
     "hero": {
-        "tag": "Spesial UMKM & Brand Lokal",
-        "title": "Foto Produk Masih <span class=\"text-red-500 line-through decoration-4 decoration-red-500/30\">Gelap & Burik?</span> <br/> <span class=\"text-primary-600\">Sulap Jadi Iklan Pro</span> Cuma Modal HP.",
-        "description": "Gak perlu sewa studio mahal. <span class=\"bg-yellow-100 px-1 text-gray-900 font-bold border-b-2 border-yellow-300\">Cuma modal HP</span>, AI sulap fotomu jadi ratusan katalog iklan estetik siap tayang.",
+        "tag": "Untuk UMKM & Brand Lokal",
+        "title": "Foto HP ngasal<br/><span class=\"text-primary-600\">Jadi Materi Iklan Siap Pakai.</span>",
+        "description": "Tanpa studio. Tanpa designer.<br/><strong>Cukup foto dari HP</strong>, lalu generate <strong>visual produk siap masuk Ads Manager</strong>.",
         "cta": "Akses Sekarang",
         "socialProof": "4,200+ Brand Owner Udah Pake",
         "warningTag": "⚠️ Jangan Sampai Kalah Visual",
@@ -14,13 +14,13 @@
         ]
     },
     "showcase": {
-        "title": "Bukti: Foto Asal Jadi Iklan Mahal.",
-        "subtitle": "Foto asal-asalan disulap jadi iklan winning campaign.",
-        "footer": "+ Dan Masih Banyak Lagi Niche Lainnya",
+        "title": "Dari Foto Biasa → Materi Iklan",
+        "subtitle": "Bukan soal estetik.<br/>Tapi soal <strong>kelayakan visual untuk iklan</strong>.",
+        "footer": "+ Banyak contoh niche lainnya",
         "samples": [
             {
                 "niche": "Fashion",
-                "tag": "✅ Ready to Ads",
+                "tag": "Siap Dites",
                 "inputImage": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400&auto=format&fit=crop",
                 "results": [
                     {
@@ -43,7 +43,7 @@
             },
             {
                 "niche": "F&B Ramadan",
-                "tag": "✅ High CTR",
+                "tag": "Visual Konsisten",
                 "inputImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop",
                 "results": [
                     {
@@ -65,8 +65,8 @@
                 ]
             },
             {
-                "niche": "Beauty Glow",
-                "tag": "✅ Aesthetics",
+                "niche": "Beauty",
+                "tag": "Clean & Rapi",
                 "inputImage": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop",
                 "results": [
                     {
@@ -90,9 +90,9 @@
         ]
     },
     "gallery": {
-        "title": "Pilih Style Semaumu",
-        "subtitle": "Lucu? Mewah? Minimalis? Semua ada preset-nya.",
-        "footer": "+ Dan 50+ Preset Lainnya...",
+        "title": "Pilih Gaya Visual",
+        "subtitle": "Sesuaikan dengan <strong>brand, campaign, dan target market</strong>.",
+        "footer": "+ 50+ preset tambahan",
         "modes": [
             {
                 "title": "Sticker Pop",
@@ -103,7 +103,7 @@
                 "image": "https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=400&auto=format&fit=crop"
             },
             {
-                "title": "With AI Models",
+                "title": "AI Model",
                 "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop"
             },
             {
@@ -113,141 +113,140 @@
         ]
     },
     "howTo": {
-        "title": "Caranya Gampang Banget",
+        "title": "Cara Kerja",
         "steps": [
             {
                 "step": "01",
                 "title": "Upload Foto Produk",
-                "desc": "Pilih foto dari galeri HP. Gak perlu diedit dulu, yang penting jelas."
+                "desc": "Gunakan foto produk apa adanya. <strong>Tidak perlu edit manual</strong>."
             },
             {
                 "step": "02",
-                "title": "Pilih Visual Style",
-                "desc": "Mau nuansa Ramadan? Minimalis? Atau Mewah? Tinggal klik preset area."
+                "title": "Pilih Gaya Visual",
+                "desc": "Tentukan nuansa sesuai <strong>brand dan campaign</strong>."
             },
             {
                 "step": "03",
                 "title": "Generate & Download",
-                "desc": "Tunggu 10 detik. AI akan buatkan puluhan variasi iklan siap posting."
+                "desc": "Dalam hitungan detik, dapat <strong>banyak variasi visual siap pakai</strong>."
             }
         ]
     },
     "dashboard": {
-        "title": "Dashboard \"Anti-Ribet\"",
-        "subtitle": "Login, upload, generate. Selesai sebelum kopimu dingin.",
+        "title": "Dashboard Sederhana",
+        "subtitle": "Tidak ada setup ribet. <strong>Fokus ke hasil</strong>.",
         "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
-        "demoText": "Lihat Demo 10 Detik"
+        "demoText": "Lihat Demo Singkat"
     },
     "benefits": {
-        "title": "Kenapa Harus Adsmakr?",
-        "subtitle": "Karena foto bagus gak harus mahal dan ribet.",
+        "title": "Kenapa Banyak Owner Pakai Ini",
+        "subtitle": "Karena visual iklan <strong>tidak harus ribet atau mahal</strong>.",
         "items": [
             {
                 "icon": "camera",
-                "title": "Modal HP Kentang? Bisa!",
-                "description": "Foto gelap, buram, resolusi rendah? Tenang. <span class='text-primary-600 font-bold'>AI otomatis perbaiki kualitasnya</span> jadi tajam & profesional."
+                "title": "Foto Apa Adanya Tetap Kepakai",
+                "description": "AI membantu merapikan pencahayaan, warna, dan komposisi agar foto <strong>layak dijadikan materi iklan</strong>."
             },
             {
                 "icon": "image",
-                "title": "Studio Foto di Saku Celana",
-                "description": "Gak perlu ribet sewa studio 5 juta/hari. <span class='bg-yellow-100 px-1 font-bold text-gray-900'>Ganti background sesuka hati</span> cuma dengan 1 klik."
+                "title": "Tidak Perlu Studio atau Designer",
+                "description": "Ganti background dan suasana visual <strong>tanpa proses manual</strong>."
             },
             {
                 "icon": "zap",
-                "title": "10 Detik, Beres Semua",
-                "description": "Deadline mepet? Upload sekarang, <span class='text-primary-600 font-bold'>10 detik kemudian 100 variasi iklan</span> udah siap posting."
+                "title": "Cepat untuk Produksi Massal",
+                "description": "Cocok untuk <strong>testing banyak variasi iklan</strong> dalam <strong>waktu singkat</strong>."
             }
         ]
     },
     "comparison": {
-        "title": "Hitungan Logis Pengusaha",
+        "title": "Perbandingan Praktis",
         "table": {
             "headers": [
-                "Fitur",
-                "Design Agency",
+                "Aspek",
+                "Agency",
                 "Adsmakr AI"
             ],
             "rows": [
                 {
-                    "factor": "Biaya/Bulan",
-                    "agency": "Rp 3.500.000",
-                    "adsmakr": "Rp 0 (Sekali Bayar)"
+                    "factor": "Biaya",
+                    "agency": "Jutaan / bulan",
+                    "adsmakr": "<strong>Sekali bayar</strong>"
                 },
                 {
-                    "factor": "Speed",
-                    "agency": "3-5 Hari Kerja",
-                    "adsmakr": "Real-time"
+                    "factor": "Waktu Produksi",
+                    "agency": "Beberapa hari",
+                    "adsmakr": "<strong>Hitungan detik</strong>"
                 },
                 {
                     "factor": "Revisi",
                     "agency": "Terbatas",
-                    "adsmakr": "Unlimited"
+                    "adsmakr": "<strong>Bebas generate ulang</strong>"
                 }
             ]
         }
     },
     "bonuses": {
-        "tag": "Limited Time Offer",
-        "title": "Beli Sekarang, Dapet Bonus Gila!",
-        "subtitlePre": "Total value bonus",
+        "tag": "Bonus",
+        "title": "Tambahan Akses",
+        "subtitlePre": "Total value",
         "subtitleValue": "Rp 799.000",
-        "subtitlePost": ", kamu dapetin GRATIS hari ini.",
+        "subtitlePost": ", termasuk di paket ini.",
         "items": [
             {
-                "title": "Bonus 1: CustomGPT Copywriting",
-                "desc": "Bikin caption jualan yang 'menghipnotis' customer. Tinggal tanya, langsung jadi.",
-                "value": "Senilai Rp 500.000"
+                "title": "CustomGPT Copywriting",
+                "desc": "Bantu menyusun <strong>caption iklan</strong> dengan cepat.",
+                "value": "Rp 500.000"
             },
             {
-                "title": "Bonus 2: 25 Marketing Prompts",
-                "desc": "Contekan ide konten selama bulan puasa. Gak bakal kehabisan ide lagi.",
-                "value": "Senilai Rp 299.000"
+                "title": "Marketing Prompt Pack",
+                "desc": "Panduan ide konten selama <strong>bulan Ramadan</strong>.",
+                "value": "Rp 299.000"
             }
         ]
     },
     "pricing": {
-        "tag": "🔥 Promo Early Bird",
-        "subtitle": "Bayar Sekali, Pake Terus",
+        "tag": "Early Access",
+        "subtitle": "<strong>Sekali bayar.</strong> Tanpa langganan.",
         "title": "Akses Lifetime",
         "originalPrice": "Rp 999.000",
         "priceMain": "74",
         "priceUnit": "rb",
-        "priceDetail": "/ Lifetime",
+        "priceDetail": "/ lifetime",
         "features": [
-            "Unlimited Generate Foto",
-            "Ratusan Template Ramadan",
-            "Hasil High-Res Siap Iklan",
-            "Commercial License (Aman)"
+            "Unlimited generate",
+            "Preset visual siap pakai",
+            "Resolusi tinggi",
+            "<strong>Lisensi komersial</strong>"
         ],
-        "cta": "Akses Sekarang",
-        "note": "*Harga naik normal bulan depan"
+        "cta": "Mulai Sekarang",
+        "note": "*Harga normal akan naik"
     },
     "faq": {
-        "title": "Masih Ragu?",
+        "title": "Pertanyaan Umum",
         "items": [
             {
-                "question": "Ini beneran sekali bayar?",
-                "answer": "Beneran 100%. Gak ada biaya bulanan, gak ada biaya tersembunyi. Bayar 74rb sekarang, pake tool-nya selamanya sampe lebaran kuda."
+                "question": "Sekali bayar?",
+                "answer": "Ya. <strong>Tidak ada biaya bulanan</strong>."
             },
             {
-                "question": "Kalo gaptek gimana?",
-                "answer": "Tenang, ini didesain buat yang gaptek. Cuma butuh skill 'Upload Foto' dan 'Klik Tombol'. Kalo bisa main IG, pasti bisa pake ini."
+                "question": "Perlu skill desain?",
+                "answer": "Tidak. Fokus ke upload dan pilih style."
             },
             {
-                "question": "Support bank apa aja?",
-                "answer": "Semua bank lokal (BCA, Mandiri, BNI, BRI), E-Wallet (GoPay, OVO, ShopeePay), dan QRIS. Transaksi aman & otomatis."
+                "question": "Pembayaran apa saja?",
+                "answer": "Bank lokal, e-wallet, dan QRIS."
             }
         ]
     },
     "stickyBar": {
-        "message": "🔥 <span class='font-bold'>Ramadan Sale!</span> Hemat 90% Cuma Hari Ini.",
-        "cta": "Ambil Promo",
+        "message": "Akses lebih hemat untuk <strong>persiapan Ramadan</strong>",
+        "cta": "Ambil Akses",
         "ticker": [
-            "Promo Terbatas",
             "Sekali Bayar",
-            "90% OFF",
-            "Garansi 30 Hari",
-            "Aman & Legal"
+            "Lifetime",
+            "Akses Instan",
+            "Lisensi Aman"
         ]
     }
 }
