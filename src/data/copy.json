@@ -1,0 +1,237 @@
+{
+    "pageTitle": "adsmakr ramadan - Persiapan Iklan Ramadan 2026",
+    "hero": {
+        "tag": "Spesial UMKM & Brand Lokal",
+        "title": "Foto Produk Masih <span class=\"text-red-500 line-through decoration-4 decoration-red-500/30\">Gelap & Burik?</span> <br/> <span class=\"text-primary-600\">Sulap Jadi Iklan Pro</span> Cuma Modal HP.",
+        "description": "Gak perlu sewa studio mahal. <span class=\"bg-yellow-100 px-1 text-gray-900 font-bold border-b-2 border-yellow-300\">Cuma modal HP</span>, AI sulap fotomu jadi ratusan katalog iklan estetik siap tayang.",
+        "cta": "Akses Sekarang",
+        "socialProof": "4,200+ Brand Owner Udah Pake",
+        "warningTag": "⚠️ Jangan Sampai Kalah Visual"
+    },
+    "showcase": {
+        "title": "Bukti: Foto Asal Jadi Iklan Mahal.",
+        "subtitle": "Foto asal-asalan disulap jadi iklan winning campaign.",
+        "footer": "+ Dan Masih Banyak Lagi Niche Lainnya",
+        "samples": [
+            {
+                "niche": "Fashion",
+                "tag": "✅ Ready to Ads",
+                "inputImage": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400&auto=format&fit=crop",
+                "results": [
+                    {
+                        "filter": "",
+                        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400&auto=format&fit=crop"
+                    },
+                    {
+                        "filter": "brightness-110",
+                        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400&auto=format&fit=crop"
+                    },
+                    {
+                        "filter": "saturate-150",
+                        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400&auto=format&fit=crop"
+                    },
+                    {
+                        "filter": "contrast-125",
+                        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400&auto=format&fit=crop"
+                    }
+                ]
+            },
+            {
+                "niche": "F&B Ramadan",
+                "tag": "✅ High CTR",
+                "inputImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop",
+                "results": [
+                    {
+                        "filter": "",
+                        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop"
+                    },
+                    {
+                        "filter": "saturate-150",
+                        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop"
+                    },
+                    {
+                        "filter": "brightness-110",
+                        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop"
+                    },
+                    {
+                        "filter": "contrast-125",
+                        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop"
+                    }
+                ]
+            },
+            {
+                "niche": "Beauty Glow",
+                "tag": "✅ Aesthetics",
+                "inputImage": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop",
+                "results": [
+                    {
+                        "filter": "",
+                        "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop"
+                    },
+                    {
+                        "filter": "brightness-105",
+                        "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop"
+                    },
+                    {
+                        "filter": "saturate-150",
+                        "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop"
+                    },
+                    {
+                        "filter": "contrast-110",
+                        "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop"
+                    }
+                ]
+            }
+        ]
+    },
+    "gallery": {
+        "title": "Pilih Style Semaumu",
+        "subtitle": "Lucu? Mewah? Minimalis? Semua ada preset-nya.",
+        "footer": "+ Dan 50+ Preset Lainnya...",
+        "modes": [
+            {
+                "title": "Sticker Pop",
+                "image": "https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=400&auto=format&fit=crop"
+            },
+            {
+                "title": "Elegant Studio",
+                "image": "https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=400&auto=format&fit=crop"
+            },
+            {
+                "title": "With AI Models",
+                "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop"
+            },
+            {
+                "title": "Neon Vibes",
+                "image": "https://images.unsplash.com/photo-1555212697-194d092e3b8f?q=80&w=400&auto=format&fit=crop"
+            }
+        ]
+    },
+    "howTo": {
+        "title": "Caranya Gampang Banget",
+        "steps": [
+            {
+                "step": "01",
+                "title": "Upload Foto Produk",
+                "desc": "Pilih foto dari galeri HP. Gak perlu diedit dulu, yang penting jelas."
+            },
+            {
+                "step": "02",
+                "title": "Pilih Visual Style",
+                "desc": "Mau nuansa Ramadan? Minimalis? Atau Mewah? Tinggal klik preset area."
+            },
+            {
+                "step": "03",
+                "title": "Generate & Download",
+                "desc": "Tunggu 10 detik. AI akan buatkan puluhan variasi iklan siap posting."
+            }
+        ]
+    },
+    "dashboard": {
+        "title": "Dashboard \"Anti-Ribet\"",
+        "subtitle": "Login, upload, generate. Selesai sebelum kopimu dingin.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+        "demoText": "Lihat Demo 10 Detik"
+    },
+    "benefits": {
+        "title": "Kenapa Harus Adsmakr?",
+        "subtitle": "Karena foto bagus gak harus mahal dan ribet.",
+        "items": [
+            {
+                "icon": "camera",
+                "title": "Modal HP Kentang? Bisa!",
+                "description": "Foto gelap, buram, resolusi rendah? Tenang. <span class='text-primary-600 font-bold'>AI otomatis perbaiki kualitasnya</span> jadi tajam & profesional."
+            },
+            {
+                "icon": "image",
+                "title": "Studio Foto di Saku Celana",
+                "description": "Gak perlu ribet sewa studio 5 juta/hari. <span class='bg-yellow-100 px-1 font-bold text-gray-900'>Ganti background sesuka hati</span> cuma dengan 1 klik."
+            },
+            {
+                "icon": "zap",
+                "title": "10 Detik, Beres Semua",
+                "description": "Deadline mepet? Upload sekarang, <span class='text-primary-600 font-bold'>10 detik kemudian 100 variasi iklan</span> udah siap posting."
+            }
+        ]
+    },
+    "comparison": {
+        "title": "Hitungan Logis Pengusaha",
+        "table": {
+            "headers": [
+                "Fitur",
+                "Design Agency",
+                "Adsmakr AI"
+            ],
+            "rows": [
+                {
+                    "factor": "Biaya/Bulan",
+                    "agency": "Rp 3.500.000",
+                    "adsmakr": "Rp 0 (Sekali Bayar)"
+                },
+                {
+                    "factor": "Speed",
+                    "agency": "3-5 Hari Kerja",
+                    "adsmakr": "Real-time"
+                },
+                {
+                    "factor": "Revisi",
+                    "agency": "Terbatas",
+                    "adsmakr": "Unlimited"
+                }
+            ]
+        }
+    },
+    "bonuses": {
+        "tag": "Limited Time Offer",
+        "title": "Beli Sekarang, Dapet Bonus Gila!",
+        "subtitlePre": "Total value bonus",
+        "subtitleValue": "Rp 799.000",
+        "subtitlePost": ", kamu dapetin GRATIS hari ini.",
+        "items": [
+            {
+                "title": "Bonus 1: CustomGPT Copywriting",
+                "desc": "Bikin caption jualan yang 'menghipnotis' customer. Tinggal tanya, langsung jadi.",
+                "value": "Senilai Rp 500.000"
+            },
+            {
+                "title": "Bonus 2: 25 Marketing Prompts",
+                "desc": "Contekan ide konten selama bulan puasa. Gak bakal kehabisan ide lagi.",
+                "value": "Senilai Rp 299.000"
+            }
+        ]
+    },
+    "pricing": {
+        "tag": "🔥 Promo Early Bird",
+        "subtitle": "Bayar Sekali, Pake Terus",
+        "title": "Akses Lifetime",
+        "originalPrice": "Rp 999.000",
+        "priceMain": "74",
+        "priceUnit": "rb",
+        "priceDetail": "/ Lifetime",
+        "features": [
+            "Unlimited Generate Foto",
+            "Ratusan Template Ramadan",
+            "Hasil High-Res Siap Iklan",
+            "Commercial License (Aman)"
+        ],
+        "cta": "Akses Sekarang",
+        "note": "*Harga naik normal bulan depan"
+    },
+    "faq": {
+        "title": "Masih Ragu?",
+        "items": [
+            {
+                "question": "Ini beneran sekali bayar?",
+                "answer": "Beneran 100%. Gak ada biaya bulanan, gak ada biaya tersembunyi. Bayar 74rb sekarang, pake tool-nya selamanya sampe lebaran kuda."
+            },
+            {
+                "question": "Kalo gaptek gimana?",
+                "answer": "Tenang, ini didesain buat yang gaptek. Cuma butuh skill 'Upload Foto' dan 'Klik Tombol'. Kalo bisa main IG, pasti bisa pake ini."
+            },
+            {
+                "question": "Support bank apa aja?",
+                "answer": "Semua bank lokal (BCA, Mandiri, BNI, BRI), E-Wallet (GoPay, OVO, ShopeePay), dan QRIS. Transaksi aman & otomatis."
+            }
+        ]
+    }
+}
