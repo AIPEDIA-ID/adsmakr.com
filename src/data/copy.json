@@ -233,5 +233,16 @@
                 "answer": "Semua bank lokal (BCA, Mandiri, BNI, BRI), E-Wallet (GoPay, OVO, ShopeePay), dan QRIS. Transaksi aman & otomatis."
             }
         ]
+    },
+    "stickyBar": {
+        "message": "🔥 <span class='font-bold'>Ramadan Sale!</span> Hemat 90% Cuma Hari Ini.",
+        "cta": "Ambil Promo",
+        "ticker": [
+            "Promo Terbatas",
+            "Sekali Bayar",
+            "90% OFF",
+            "Garansi 30 Hari",
+            "Aman & Legal"
+        ]
     }
 }
