@@ -63,56 +63,89 @@ NEVER use flat buttons. Use this exact 3D style for all CTAs:
 - **Subtitles**: `.text-subtitle` -> `text-base md:text-lg`, `text-gray-600`, `font-medium`, `max-w-lg`.
 - **Body**: `.text-body-sm` -> `text-[14px]`, `text-gray-600`, `leading-1.6`.
 
-### D. Card & Container Styles
-- **Glass/Clean**: White bg, subtle border (`border-gray-100`), `rounded-xl` or `rounded-2xl`.
-- **Raw/Draft**: For "Before" states, use `border-dashed`, `border-2`, `bg-gray-50`.
-- **Badges**: Use rotated pills (e.g., `-rotate-2`) for "Sticker" feel. `font-black`, `text-[10px]`.
-- **Centered Layout**: Use `.layout-centered` (`max-w-4xl mx-auto px-4 text-center`) for narrow, focused sections.
+## 3. Core Layout Architecture (STRICT)
+**You must follow this HTML structure for EVERY section to ensure proper accumulation and centering.**
+Do not create full-width text that spans the edge of the screen.
 
-### E. Animations (The "Live" Feel)
-You must include these keyframes in the CSS:
-1.  **`wiggle`**: For buttons to draw attention (rotate +/- 2deg).
-2.  **`slideUpFade`**: For sticky bars and section entrances.
-3.  **`marquee`**: For running text.
-4.  **`arrowBounce`**: For "Before vs After" directional cues.
-5.  **`zoomIn`**: Scroll-triggered entrance with `opacity-0` -> `opacity-1` and `scale-0.9` -> `scale-1`.
+### A. The "Section-Container" Pattern
+Every section must follow this specific nesting:
+```html
+<section class="py-16 md:py-24 relative overflow-hidden">
+  <!-- 1. Global Wrapper (Constrains width) -->
+  <div class="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
+    
+    <!-- 2. Centered Header (MANDATORY for Titles) -->
+    <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+      <span class="...badge...">[Badge]</span>
+      <h2 class="...font-black text-4xl...">[Title]</h2>
+      <p class="...text-subtitle mx-auto...">[Subtitle]</p>
+    </div>
 
-## 3. Page Structure (High-Conversion Sales Flow)
-Unless requested otherwise, follow this proven structure:
+    <!-- 3. The Content Grid/Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+       <!-- ... -->
+    </div>
 
-1.  **Sticky Promo Bar (Bottom Fixed)**:
-    -   **CRITICAL**: Add `pb-32` to `<main>` so the bar never covers footer content.
-    -   **Layout**: `fixed bottom-0`, `z-50`, `backdrop-blur`.
-    -   **Content**: Inline `flex-row`. Text on left (Marquee with `mask-gradient`), Button on right (`shrink-0`).
-    -   **Animation**: `slideUpFade` entrance + `animate-attention` (Wiggle) on button.
-2.  **Hero Section**:
-    -   **Hook**: "⚠️ [Warning Tag]" (e.g., "Jangan Sampai Boncos").
-    -   **Headline**: Big, bold Problem/Solution statement.
-    -   **Social Proof**: 3 Avatars + Text (e.g., "Trusted by 4000+").
-3.  **Showcase (The "Magic" Grid)**:
-    -   **Concept**: "Ugly vs Pro".
-    -   **Visual**: "Before" Image (Gray/Dashed, Badge: "FOTO ASLI") -> **Red Bouncing Arrow** -> "After" Image (Bright, Badge: "AI").
-    -   **Mobile**: Ensure arrow adapts (visible on mobile too).
-    -   **Entrance**: `scroll-zoom-item` with **Randomized Delay** (`Math.random()`) for "popcorn" effect.
-4.  **Gallery Section**:
-    -   Grid of results.
-    -   **Animation**: Also uses opacity-0 + scroll-trigger + random delays.
-5.  **How It Works**: 3 Simple Steps (Card style).
-6.  **Comparison / Logic**: "Why Us?" (Table or Bento).
-7.  **Pricing (Scarcity)**:
-    -   Strike-through original, Big main price.
-    -   "Lifetime" emphasis.
-    -   **Pulsing CTA**.
-8.  **FAQ**: Accordion.
+  </div>
+</section>
+```
 
-## 4. Technical Implementation Rules
+### B. Centered Text Rules
+- **NEVER** allow paragraph text to stretch full width.
+- **ALWAYS** wrap centered text blocks in `max-w-2xl` or `max-w-3xl` + `mx-auto`.
+- **Headlines**: Must be `text-center` with `text-balance` (if available) or `mx-auto`.
+
+## 4. Component Library & Styles
+### A. "Pop-3D" Button (CRITICAL)
+NEVER use flat buttons. Use this exact 3D style for all CTAs:
+```css
+.btn-3d {
+    position: relative;
+    background: var(--primary-main);
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 16px;
+    border: none;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.25), 
+                0 4px 0 var(--primary-deep), 
+                0 6px 6px -3px rgba(0,0,0,0.2);
+    transition: all 0.1s ease;
+}
+.btn-3d:active {
+    transform: translateY(4px);
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.25), 0 0 0 var(--primary-deep);
+}
+```
+
+### B. Cards & Containers
+- **Glass Card**: `bg-white border border-gray-100 rounded-2xl shadow-sm`.
+- **Feature Card**: `p-6` or `p-8` padding.
+- **Before/After container**: Use `relative` positioning.
+
+### C. Typography Classes
+- `.section-title`: `text-3xl md:text-5xl font-black text-gray-900 tracking-tight leading-tight`.
+- `.text-subtitle`: `text-lg text-gray-600 font-medium max-w-xl mx-auto leading-relaxed`.
+- `.text-body`: `text-sm text-gray-600 leading-relaxed font-medium`.
+
+## 5. Page Flow Strategy (High-Conversion)
+Unless requested otherwise, follow this structure:
+
+1.  **Sticky Promo Bar**: Fixed Bottom. **Inline Layout** (`flex-row items-center justify-center`). Marquee text left, Button right. `pb-32` on Body.
+2.  **Hero Section**: Centered Hook + Headline + Subheadline + CTA + Social Proof.
+3.  **Showcase (Magic Grid)**: Centered Title -> Comparison Grid.
+4.  **Gallery**: Grid layout.
+5.  **How It Works**: 3-Step Grid.
+6.  **Social Proof/Benefits**: Bento Grid (Centered Titles).
+7.  **Pricing**: Centered Pricing Cards.
+8.  **FAQ**: Centered Accordion (max-w-2xl mx-auto).
+
+## 6. Technical Implementation Rules
 1.  **Code Output**: Full HTML/Tailwind or Astro.
 2.  **Mobile First**: `grid-cols-1` -> `md:grid-cols-2`.
-3.  **Interaction Scripts**:
-    -   Include `IntersectionObserver` script for the `.scroll-zoom-item` / `.animate-zoom-in` class toggle.
-    -   Ensure `animateDelay` is set inline (e.g., `style="animation-delay: 0.2s"`).
-4.  **Copy**: Write **"Copywriting Jualan"** (Persuasive, colloquial, fear-of-missing-out).
-5.  **Utilities**: Use `.layout-centered` (`max-w-4xl mx-auto`) for text-heavy sections.
+3.  **Interaction Scripts**: `IntersectionObserver` for animations.
+4.  **Copy**: "Copywriting Jualan" (Persuasive).
+5.  **Variables**: Use `:root` for colors.
 
 ---
 **Example Usage for AI:**
