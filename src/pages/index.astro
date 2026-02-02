@@ -34,21 +34,15 @@ import copy from "../data/copy.json";
 			</div>
 			<div class="mt-8 flex flex-col items-center gap-1">
 				<div class="flex -space-x-2">
-					<img
-						class="w-8 h-8 rounded-full border-2 border-white"
-						src="https://i.pravatar.cc/100?img=1"
-						alt="User"
-					/>
-					<img
-						class="w-8 h-8 rounded-full border-2 border-white"
-						src="https://i.pravatar.cc/100?img=2"
-						alt="User"
-					/>
-					<img
-						class="w-8 h-8 rounded-full border-2 border-white"
-						src="https://i.pravatar.cc/100?img=3"
-						alt="User"
-					/>
+					{
+						copy.hero.socialProofImages.map((src) => (
+							<img
+								class="w-8 h-8 rounded-full border-2 border-white"
+								src={src}
+								alt="User"
+							/>
+						))
+					}
 					<div
 						class="w-8 h-8 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-[10px] font-bold text-gray-500"
 					>
@@ -67,7 +61,7 @@ import copy from "../data/copy.json";
 				<h2 class="section-title mb-3">
 					{copy.showcase.title}
 				</h2>
-				<p class="text-base text-gray-600 font-medium max-w-lg mx-auto">
+				<p class="text-subtitle">
 					{copy.showcase.subtitle}
 				</p>
 			</div>
@@ -124,7 +118,7 @@ import copy from "../data/copy.json";
 		<section>
 			<div class="text-center mb-8">
 				<h2 class="section-title mb-3">{copy.gallery.title}</h2>
-				<p class="text-base text-gray-600 font-medium max-w-lg mx-auto">
+				<p class="text-subtitle">
 					{copy.gallery.subtitle}
 				</p>
 			</div>
@@ -169,9 +163,7 @@ import copy from "../data/copy.json";
 							<h3 class="font-black text-gray-900 text-[15px] tracking-tight leading-snug mb-2">
 								{item.title}
 							</h3>
-							<p class="text-sm font-medium text-gray-600 leading-relaxed">
-								{item.desc}
-							</p>
+							<p class="text-body-sm">{item.desc}</p>
 						</div>
 					))
 				}
@@ -184,7 +176,7 @@ import copy from "../data/copy.json";
 		>
 			<div class="text-center mb-8">
 				<h2 class="section-title mb-3">{copy.dashboard.title}</h2>
-				<p class="text-base text-gray-600 font-medium max-w-lg mx-auto">
+				<p class="text-subtitle">
 					{copy.dashboard.subtitle}
 				</p>
 			</div>
@@ -218,9 +210,7 @@ import copy from "../data/copy.json";
 		<section>
 			<div class="text-center mb-10">
 				<h2 class="section-title mb-3">{copy.benefits.title}</h2>
-				<p
-					class="text-base text-gray-600 font-medium pb-2 max-w-lg mx-auto"
-				>
+				<p class="text-subtitle pb-2">
 					{copy.benefits.subtitle}
 				</p>
 			</div>
@@ -240,7 +230,7 @@ import copy from "../data/copy.json";
 									{benefit.title}
 								</h4>
 								<p
-									class="text-sm font-medium text-gray-600 leading-relaxed"
+									class="text-body-sm"
 									set:html={benefit.description}
 								/>
 							</div>
@@ -309,7 +299,7 @@ import copy from "../data/copy.json";
 				<h2 class="text-2xl font-black mb-2 text-gray-900">
 					{copy.bonuses.title}
 				</h2>
-				<p class="text-gray-600 text-sm max-w-lg mx-auto">
+				<p class="text-body-sm max-w-lg mx-auto">
 					{copy.bonuses.subtitlePre}
 					<strong class="text-gray-900"
 						>{copy.bonuses.subtitleValue}</strong
@@ -443,7 +433,7 @@ import copy from "../data/copy.json";
 									class="w-5 h-5 text-gray-400 transition-transform duration-300 group-open:rotate-180"
 								/>
 							</summary>
-							<div class="px-5 pb-5 text-[14px] font-medium text-gray-600 leading-relaxed border-t border-gray-100 pt-4 bg-white">
+							<div class="px-5 pb-5 text-body-sm border-t border-gray-100 pt-4 bg-white">
 								{faq.answer}
 							</div>
 						</details>
