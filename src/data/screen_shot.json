@@ -11,23 +11,23 @@
             {
                 "niche": "Fashion",
                 "tag": "Siap Dites",
-                "inputImage": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400&auto=format&fit=crop",
+                "inputImage": "/assets/samples/fashion/input_image.jpeg",
                 "results": [
                     {
                         "filter": "",
-                        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400&auto=format&fit=crop"
+                        "image": "/assets/samples/fashion/variant_1.png"
                     },
                     {
                         "filter": "brightness-110",
-                        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400&auto=format&fit=crop"
+                        "image": "/assets/samples/fashion/variant_2.png"
                     },
                     {
                         "filter": "saturate-150",
-                        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400&auto=format&fit=crop"
+                        "image": "/assets/samples/fashion/variant_3.png"
                     },
                     {
                         "filter": "contrast-125",
-                        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400&auto=format&fit=crop"
+                        "image": "/assets/samples/fashion/variant_4.png"
                     }
                 ]
             },
