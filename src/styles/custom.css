@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+    /* -- Theme Construction Kit -- */
+
+    /* 1. Brand Colors (Green Theme - RESTORED) */
+    --primary-main: #16b774;
+    /* Bold Ramadan Green */
+    --primary-deep: #0d936d;
+    /* Darker Shade */
+    --primary-dark: #022c22;
+    /* Deepest Shade */
+
+    /* 2. Color Scale (Emerald/Green Mapping) */
+    --color-primary-50: #ecfdf5;
+    --color-primary-100: #d1fae5;
+    --color-primary-200: #a7f3d0;
+    --color-primary-300: #6ee7b7;
+    --color-primary-400: #34d399;
+    --color-primary-500: var(--primary-main);
+    --color-primary-600: #059669;
+    --color-primary-700: var(--primary-deep);
+    --color-primary-800: #065f46;
+    --color-primary-900: var(--primary-dark);
+
+
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #ffffff;
+    color: #111827;
+    line-height: 1.5;
+}
+
+/* Essential 3D Style */
+.btn-3d {
+    position: relative;
+    background: var(--primary-main);
+    color: white;
+    padding: 16px 24px;
+    font-weight: 800;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    border: none;
+    /* "Puffy" Texture: Top highlight + Bottom shadow */
+    box-shadow:
+        inset 0 2px 0 rgba(255, 255, 255, 0.25),
+        0 4px 0 var(--primary-deep),
+        0 6px 6px -3px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.9rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-3d:active {
+    transform: translateY(4px);
+    box-shadow:
+        inset 0 2px 0 rgba(255, 255, 255, 0.25),
+        0 0 0 var(--primary-deep);
+}
+
+.app-container {
+    max-width: 560px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: white;
+    border-left: 1px solid #f3f4f6;
+    border-right: 1px solid #f3f4f6;
+}
+
+/* Balanced Typography */
+.text-hero {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.05em;
+    font-weight: 800;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    font-weight: 800;
+}
+
+.highlight-red {
+    color: #ef4444;
+}
+
+.highlight-green {
+    color: #10b981;
+}
+
+/* Stabilo/Highlight Block Effect */
+.text-highlight {
+    background-color: #fef9c3;
+    /* yellow-100 */
+    color: #854d0e;
+    /* yellow-900 */
+    padding: 0 0.2em;
+    border-radius: 0.2em;
+    font-weight: 700;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+/* Generic Card Props */
+.photo-box {
+    background-color: #f9fafb;
+    border: 2px solid #f3f4f6;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Refined Pricing Card - Smaller & Cleaner */
+.pricing-card-3d-final {
+    background: #ffffff;
+    border: 2px solid #111827;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0 0 #111827;
+    position: relative;
+    /* Reduced padding */
+    padding: 2.5rem 1.5rem;
+}
+
+/* Human-Readable Body Text */
+.text-body-pro {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* Consistent Typography System */
+.text-subtitle {
+    font-size: 1.125rem;
+    /* Increased from 1rem to 1.125rem */
+    line-height: 1.6;
+    color: #4b5563;
+    /* gray-600 */
+    font-weight: 500;
+    max-width: 32rem;
+    /* max-w-lg */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-body-sm {
+    font-size: 1rem;
+    /* Increased from 0.875rem to 1rem */
+    line-height: 1.6;
+    color: #4b5563;
+    /* gray-600 */
+    font-weight: 500;
+}
+
+hr {
+    display: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+* {
+    font-style: normal !important;
+}
+
+/* --- ANIMATIONS & PAGE SPECIFIC --- */
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-zoom-in {
+    animation: zoomIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-texture {
+    position: relative;
+    isolation: isolate;
+}
+
+.hero-texture::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-size: 24px 24px;
+    mask-image: linear-gradient(to bottom,
+            black 40%,
+            transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom,
+            black 40%,
+            transparent 100%);
+    opacity: 0.5;
+}
+
+@keyframes pulseFade {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(0.98);
+    }
+}
+
+.animate-pulse-fade {
+    animation: pulseFade 6s ease-in-out infinite;
+}
+
+/* Button Shine Effect */
+.btn-shine {
+    overflow: hidden;
+    /* Ensure shine doesn't spill */
+}
+
+.btn-shine::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    animation: shine 5s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+
+    15% {
+        left: 200%;
+    }
+
+    100% {
+        left: 200%;
+    }
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    5% {
+        transform: rotate(-2deg) scale(1.02);
+    }
+
+    10% {
+        transform: rotate(2deg) scale(1.02);
+    }
+
+    15% {
+        transform: rotate(-2deg) scale(1.02);
+    }
+
+    20% {
+        transform: rotate(2deg) scale(1.02);
+    }
+
+    25% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes loopScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-marquee {
+    display: flex;
+    animation: loopScroll 20s linear infinite;
+}
+
+.mask-gradient {
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
+}
+
+.animate-slide-up-fade {
+    animation: slideUpFade 0.5s ease-out forwards;
+}
+
+.animate-attention {
+    animation: wiggle 3s ease-in-out infinite;
+    transform-origin: center center;
+}
