@@ -3,19 +3,19 @@
     "hero": {
         "tag": "Untuk UMKM & Brand Lokal",
         "title": "Foto HP Biasa<br/><span class=\"text-primary-600\">Kenapa Iklan Jadi Gak Diklik?</span>",
-        "description": "Produknya sering sudah oke.<br/><strong>Visual iklannya yang bikin orang skip.</strong><br/><br/>Upload foto dari HP → generate <strong>banyak visual siap diuji di Ads</strong>.<br/>Tanpa studio. Tanpa designer.",
+        "description": "Produknya sering sudah oke.<br/><strong>Visual iklannya yang bikin orang skip.</strong><br/><br/>Upload foto dari HP → generate <span class=\"text-highlight\">banyak visual siap diuji di Ads</span>.<br/>Tanpa studio. Tanpa designer.",
         "cta": "Coba Generate Visual",
         "socialProof": "Dipakai 4.200+ Brand Owner",
         "warningTag": "⚠️ Jangan Buang Budget Ads"
     },
     "showcase": {
         "title": "Bukan Foto Cantik. Tapi Visual yang Kerja.",
-        "subtitle": "Tujuan visual iklan cuma satu:<br/><strong>bikin orang percaya & mau klik</strong>.",
+        "subtitle": "Tujuan visual iklan cuma satu:<br/><span class=\"text-highlight\">bikin orang percaya & mau klik</span>.",
         "footer": "+ Banyak contoh niche lainnya"
     },
     "gallery": {
         "title": "Gaya Visual untuk Testing Iklan",
-        "subtitle": "Bukan cari yang paling estetik,<br/><strong>tapi mana yang perform</strong>.",
+        "subtitle": "Bukan cari yang paling estetik,<br/><span class=\"text-highlight\">tapi mana yang perform</span>.",
         "footer": "+ 50+ preset visual siap testing"
     },
     "howTo": {
@@ -34,7 +34,7 @@
             {
                 "step": "03",
                 "title": "Generate & Bandingkan",
-                "desc": "Generate <strong>sebanyak yang kamu mau</strong> untuk testing visual iklan."
+                "desc": "Generate <span class=\"text-highlight\">sebanyak yang kamu mau</span> untuk testing visual iklan."
             }
         ]
     },
@@ -45,12 +45,12 @@
     },
     "benefits": {
         "title": "Kenapa Ini Cocok untuk Pasang Ads",
-        "subtitle": "Karena visual iklan harus <strong>bekerja, bukan sekadar bagus</strong>.",
+        "subtitle": "Karena visual iklan harus <span class=\"text-highlight\">bekerja, bukan sekadar bagus</span>.",
         "items": [
             {
                 "icon": "target",
                 "title": "Fokus ke Performa Iklan",
-                "description": "Visual disiapkan untuk <strong>berhentiin scroll & dapet klik</strong>, bukan cuma katalog."
+                "description": "Visual disiapkan untuk <span class=\"text-highlight\">berhentiin scroll & dapet klik</span>, bukan cuma katalog."
             },
             {
                 "icon": "image",
@@ -60,7 +60,7 @@
             {
                 "icon": "zap",
                 "title": "Cepat & Praktis",
-                "description": "Tidak nunggu fotografer atau revisi. <strong>Langsung tes di Ads</strong>."
+                "description": "Tidak nunggu fotografer atau revisi. <span class=\"text-highlight\">Langsung tes di Ads</span>."
             }
         ]
     },
@@ -76,7 +76,7 @@
                 {
                     "factor": "Tujuan",
                     "agency": "Foto terlihat profesional",
-                    "adsmakr": "<strong>Visual siap diuji di iklan</strong>"
+                    "adsmakr": "<span class=\"text-highlight\">Visual siap diuji di iklan</span>"
                 },
                 {
                     "factor": "Pendekatan",
@@ -86,7 +86,7 @@
                 {
                     "factor": "Risiko Salah",
                     "agency": "Buang waktu & biaya",
-                    "adsmakr": "<strong>Tinggal generate ulang</strong>"
+                    "adsmakr": "<span class=\"text-highlight\">Tinggal generate ulang</span>"
                 }
             ]
         }
@@ -105,7 +105,7 @@
             },
             {
                 "title": "Marketing Prompt Pack Ramadan",
-                "desc": "Ide visual & angle promo untuk <strong>momentum Ramadan</strong>.",
+                "desc": "Ide visual & angle promo untuk <span class=\"text-highlight\">momentum Ramadan</span>.",
                 "value": "Rp 299.000"
             }
         ]
@@ -122,7 +122,7 @@
             "Unlimited generate",
             "Visual siap testing iklan",
             "Resolusi tinggi",
-            "<strong>Lisensi komersial</strong>"
+            "<span class=\"text-highlight\">Lisensi komersial</span>"
         ],
         "cta": "Mulai Testing Visual",
         "note": "*Harga bisa berubah setelah early access"
@@ -132,7 +132,7 @@
         "items": [
             {
                 "question": "Ini beda dari tool foto produk lain?",
-                "answer": "Ya. Fokusnya <strong>bukan sekadar bagus</strong>, tapi siap dipakai untuk iklan."
+                "answer": "Ya. Fokusnya <span class=\"text-highlight\">bukan sekadar bagus</span>, tapi siap dipakai untuk iklan."
             },
             {
                 "question": "Ada batas generate?",
@@ -140,7 +140,7 @@
             },
             {
                 "question": "Sekali bayar?",
-                "answer": "Ya. <strong>Tidak ada biaya bulanan</strong>."
+                "answer": "Ya. <span class=\"text-highlight\">Tidak ada biaya bulanan</span>."
             }
         ]
     },
