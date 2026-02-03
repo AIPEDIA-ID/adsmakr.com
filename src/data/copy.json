@@ -1,22 +1,22 @@
 {
-    "pageTitle": "Adsmakr – Visual Iklan Siap Dipakai",
+    "pageTitle": "adsmakr – Persiapan Iklan Ramadan",
     "hero": {
         "tag": "Untuk UMKM & Brand Lokal",
-        "title": "Foto HP Biasa<br/><span class=\"text-primary-600\">Bikin Iklan Sepi?</span>",
-        "description": "Cukup foto dari HP → jadi <span class=\"text-highlight\">banyak visual iklan profesional</span><br/>Tanpa studio, Tanpa Fotografer, Tanpa designer",
+        "title": "Foto Biasa<br/><span class=\"text-primary-600\">Jadi Foto Profesional</span>",
+        "description": "Foto dari HP<br/>langsung jadi <span class=\"text-highlight\">foto siap iklan</span><br/>cocok untuk persiapan <span class=\"text-highlight\">Ramadan</span>",
         "cta": "Akses Sekarang",
-        "socialProof": "Dipakai 100+ Brand Owner",
-        "warningTag": "⚠️ Edisi Ramadan"
+        "socialProof": "4,200+ Brand Owner Udah Pake",
+        "warningTag": "⚠️ Siap Dipakai Buat Iklan"
     },
     "showcase": {
-        "title": "Bukan Cuma Bagus",
-        "subtitle": "<span class=\"text-highlight\">Harus bikin orang mau klik</span>",
+        "title": "Dari Foto Biasa → Materi Iklan",
+        "subtitle": "Bukan soal estetik<br/>tapi soal <span class=\"text-highlight\">layak dipakai iklan</span>",
         "footer": "+ Banyak contoh niche lainnya"
     },
     "gallery": {
-        "title": "Pilih Gaya Foto untuk Iklan",
-        "subtitle": "Bukan soal cantik<br/><span class=\"text-highlight\">Yang penting laku</span>",
-        "footer": "+ 50+ preset visual siap pakai"
+        "title": "Pilih Gaya Visual",
+        "subtitle": "Sesuaikan dengan brand dan campaign<br/>termasuk momen Ramadan",
+        "footer": "+ 50+ preset tambahan"
     },
     "howTo": {
         "title": "Cara Kerja",
@@ -24,95 +24,95 @@
             {
                 "step": "01",
                 "title": "Upload Foto Produk",
-                "desc": "Pakai foto dari HP apa adanya.<br/><strong>Tidak perlu foto ulang</strong>."
+                "desc": "Gunakan foto produk apa adanya"
             },
             {
                 "step": "02",
                 "title": "Pilih Gaya Visual",
-                "desc": "Sesuaikan dengan <strong>iklan & target pembeli</strong>."
+                "desc": "Sesuaikan dengan kebutuhan iklan"
             },
             {
                 "step": "03",
-                "title": "Generate & Pakai",
-                "desc": "Bisa generate <span class=\"text-highlight\">sepuasnya</span> sampai dapat yang cocok."
+                "title": "Generate & Download",
+                "desc": "<span class=\"text-highlight\">Banyak variasi</span> siap dipakai"
             }
         ]
     },
     "dashboard": {
-        "title": "Dashboard Simpel",
-        "subtitle": "<strong>Tidak ribet.</strong> Tinggal upload dan pilih.",
+        "title": "Dashboard Sederhana",
+        "subtitle": "Tidak ribet<br/>tinggal upload dan pilih",
         "demoText": "Lihat Demo Singkat"
     },
     "benefits": {
         "title": "Kenapa Banyak Owner Pakai Ini",
-        "subtitle": "Karena foto iklan <span class=\"text-highlight\">ngaruh langsung ke penjualan</span>.",
+        "subtitle": "Karena foto iklan <span class=\"text-highlight\">ngaruh ke hasil ads</span>",
         "items": [
             {
-                "icon": "target",
-                "title": "Foto Lebih Meyakinkan",
-                "description": "Bikin calon pembeli <span class=\"text-highlight\">nggak ragu buat klik</span> iklanmu."
+                "icon": "camera",
+                "title": "Foto Lebih Rapi",
+                "description": "Pencahayaan warna dan komposisi jadi lebih enak dilihat"
             },
             {
                 "icon": "image",
-                "title": "Bebas Coba-Coba",
-                "description": "Salah pilih foto? <strong>Tinggal generate ulang</strong>. Tidak kena biaya."
+                "title": "Tidak Perlu Studio",
+                "description": "Tidak perlu foto ulang atau edit manual"
             },
             {
                 "icon": "zap",
-                "title": "Cepat & Praktis",
-                "description": "Tidak nunggu editor. <span class=\"text-highlight\">Langsung bisa dipakai iklan</span>."
+                "title": "Cepat Dipakai",
+                "description": "Cocok untuk testing dan persiapan iklan Ramadan"
             }
         ]
     },
     "comparison": {
-        "title": "Perbedaannya di Sini",
+        "title": "Perbandingan Praktis",
         "table": {
             "headers": [
-                "Fokus",
-                "Foto Produk Biasa",
+                "Aspek",
+                "Cara Biasa",
                 "Adsmakr"
             ],
             "rows": [
                 {
-                    "factor": "Tujuan",
-                    "agency": "Sekadar kelihatan bagus",
-                    "adsmakr": "<span class=\"text-highlight\">Siap buat iklan</span>"
+                    "factor": "Hasil Foto",
+                    "agency": "Apa adanya",
+                    "adsmakr": "<span class=\"text-highlight\">Lebih profesional</span>"
                 },
                 {
-                    "factor": "Jumlah",
-                    "agency": "Satu foto",
-                    "adsmakr": "<strong>Banyak pilihan</strong>"
+                    "factor": "Waktu",
+                    "agency": "Lama",
+                    "adsmakr": "Cepat"
                 },
                 {
-                    "factor": "Kalau Salah",
-                    "agency": "Buang waktu & biaya",
-                    "adsmakr": "<span class=\"text-highlight\">Tinggal ulang</span>"
+                    "factor": "Biaya",
+                    "agency": "Berulang",
+                    "adsmakr": "<span class=\"text-highlight\">Sekali bayar</span>"
                 }
             ]
         }
     },
     "bonuses": {
         "tag": "Bonus",
-        "title": "Biar Siap Jualan Ramadan",
+        "title": "Tambahan Akses",
         "subtitlePre": "Total value",
         "subtitleValue": "Rp 799.000",
-        "subtitlePost": ", sudah termasuk.",
+        "subtitlePost": ", termasuk",
         "items": [
             {
                 "title": "CustomGPT Copywriting",
-                "desc": "Bantu bikin <strong>caption iklan</strong> lebih cepat.",
+                "desc": "Bantu bikin caption iklan lebih cepat",
                 "value": "Rp 500.000"
             },
             {
-                "title": "Marketing Prompt Pack Ramadan",
-                "desc": "Ide konten & promo <span class=\"text-highlight\">khusus Ramadan</span>.",
+                "title": "Marketing Prompt Pack",
+                "desc": "Ide konten promo Ramadan",
                 "value": "Rp 299.000"
             }
         ]
     },
     "pricing": {
         "tag": "Early Access",
-        "subtitle": "<strong>Sekali bayar.</strong> Tidak bulanan.",
+        "subtitle": "<span class=\"text-highlight\">Sekali bayar</span> tanpa langganan",
         "title": "Akses Lifetime",
         "originalPrice": "Rp 999.000",
         "priceMain": "74",
@@ -120,38 +120,37 @@
         "priceDetail": "/ lifetime",
         "features": [
             "Unlimited generate",
-            "Siap untuk iklan",
-            "Resolusi tinggi",
+            "Foto siap iklan",
+            "Bonus",
             "<span class=\"text-highlight\">Lisensi komersial</span>"
         ],
-        "cta": "Mulai Generate",
+        "cta": "Mulai Sekarang",
         "note": "*Harga bisa berubah"
     },
     "faq": {
         "title": "Pertanyaan Umum",
         "items": [
             {
-                "question": "Ini buat siapa?",
-                "answer": "Buat <span class=\"text-highlight\">UMKM yang pasang iklan</span>."
+                "question": "Ini tools atau jasa",
+                "answer": "Ini tools yang bisa kamu pakai sendiri"
             },
             {
-                "question": "Ada batas generate?",
-                "answer": "Tidak ada. <strong>Bebas sepuasnya</strong>."
+                "question": "Sekali bayar",
+                "answer": "<span class=\"text-highlight\">Iya</span>"
             },
             {
-                "question": "Sekali bayar?",
-                "answer": "Ya. <span class=\"text-highlight\">Tidak ada biaya bulanan</span>."
+                "question": "Perlu skill desain",
+                "answer": "Tidak"
             }
         ]
     },
     "stickyBar": {
         "message": "Siapkan foto iklan sebelum Ramadan",
-        "cta": "Mulai Generate",
+        "cta": "Bonus & Diskon 70%",
         "ticker": [
             "Sekali Bayar",
-            "Unlimited",
-            "Siap Iklan",
-            "Lisensi Aman"
+            "Mudah Dipakai",
+            "Siap Iklan"
         ]
     }
 }
