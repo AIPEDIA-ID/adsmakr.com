@@ -1,22 +1,22 @@
 {
-    "pageTitle": "Adsmakr – Visual Iklan Siap Diuji",
+    "pageTitle": "Adsmakr – Visual Iklan Siap Dipakai",
     "hero": {
         "tag": "Untuk UMKM & Brand Lokal",
-        "title": "Foto HP Biasa<br/><span class=\"text-primary-600\">Kenapa Iklan Jadi Gak Diklik?</span>",
-        "description": "Produknya sering sudah oke.<br/><strong>Visual iklannya yang bikin orang skip.</strong><br/><br/>Upload foto dari HP → generate <span class=\"text-highlight\">banyak visual siap diuji di Ads</span>.<br/>Tanpa studio. Tanpa designer.",
+        "title": "Foto HP Biasa<br/><span class=\"text-primary-600\">Kenapa Iklan Sepi?</span>",
+        "description": "Seringnya produk sudah oke<br/><strong><span class=\"text-highlight\">Masalahnya di foto iklan</span></span></strong><br/><br/>Cukup foto dari HP → jadi <span class=\"text-highlight\">banyak visual siap iklan</span><br/>Tanpa studio, Tanpa designer",
         "cta": "Coba Generate Visual",
-        "socialProof": "Dipakai 4.200+ Brand Owner",
+        "socialProof": "Dipakai 100+ Brand Owner",
         "warningTag": "⚠️ Jangan Buang Budget Ads"
     },
     "showcase": {
-        "title": "Bukan Foto Cantik. Tapi Visual yang Kerja.",
-        "subtitle": "Tujuan visual iklan cuma satu:<br/><span class=\"text-highlight\">bikin orang percaya & mau klik</span>.",
+        "title": "Foto Bukan Cuma Bagus",
+        "subtitle": "<span class=\"text-highlight\">Harus bikin orang mau klik.</span>",
         "footer": "+ Banyak contoh niche lainnya"
     },
     "gallery": {
-        "title": "Gaya Visual untuk Testing Iklan",
-        "subtitle": "Bukan cari yang paling estetik,<br/><span class=\"text-highlight\">tapi mana yang perform</span>.",
-        "footer": "+ 50+ preset visual siap testing"
+        "title": "Pilih Gaya Foto untuk Iklan",
+        "subtitle": "Bukan soal cantik<br/><span class=\"text-highlight\">Yang penting laku</span>",
+        "footer": "+ 50+ preset visual siap pakai"
     },
     "howTo": {
         "title": "Cara Kerja",
@@ -24,95 +24,95 @@
             {
                 "step": "01",
                 "title": "Upload Foto Produk",
-                "desc": "Foto produk apa adanya dari HP.<br/><strong>Tidak perlu setup studio</strong>."
+                "desc": "Pakai foto dari HP apa adanya.<br/><strong>Tidak perlu foto ulang</strong>."
             },
             {
                 "step": "02",
                 "title": "Pilih Gaya Visual",
-                "desc": "Sesuaikan dengan <strong>tujuan iklan & audiens</strong>."
+                "desc": "Sesuaikan dengan <strong>iklan & target pembeli</strong>."
             },
             {
                 "step": "03",
-                "title": "Generate & Bandingkan",
-                "desc": "Generate <span class=\"text-highlight\">sebanyak yang kamu mau</span> untuk testing visual iklan."
+                "title": "Generate & Pakai",
+                "desc": "Bisa generate <span class=\"text-highlight\">sepuasnya</span> sampai dapat yang cocok."
             }
         ]
     },
     "dashboard": {
-        "title": "Dibuat untuk Owner Ads",
-        "subtitle": "Bukan alat desain.<br/><strong>Tapi alat bantu ambil keputusan visual</strong>.",
+        "title": "Dashboard Simpel",
+        "subtitle": "<strong>Tidak ribet.</strong> Tinggal upload dan pilih.",
         "demoText": "Lihat Demo Singkat"
     },
     "benefits": {
-        "title": "Kenapa Ini Cocok untuk Pasang Ads",
-        "subtitle": "Karena visual iklan harus <span class=\"text-highlight\">bekerja, bukan sekadar bagus</span>.",
+        "title": "Kenapa Banyak Owner Pakai Ini",
+        "subtitle": "Karena foto iklan <span class=\"text-highlight\">ngaruh langsung ke penjualan</span>.",
         "items": [
             {
                 "icon": "target",
-                "title": "Fokus ke Performa Iklan",
-                "description": "Visual disiapkan untuk <span class=\"text-highlight\">berhentiin scroll & dapet klik</span>, bukan cuma katalog."
+                "title": "Foto Lebih Meyakinkan",
+                "description": "Bikin calon pembeli <span class=\"text-highlight\">nggak ragu buat klik</span> iklanmu."
             },
             {
                 "icon": "image",
-                "title": "Bebas Generate & Testing",
-                "description": "Tidak ada batasan. <strong>Salah pilih visual tidak nambah biaya</strong>."
+                "title": "Bebas Coba-Coba",
+                "description": "Salah pilih foto? <strong>Tinggal generate ulang</strong>. Tidak kena biaya."
             },
             {
                 "icon": "zap",
                 "title": "Cepat & Praktis",
-                "description": "Tidak nunggu fotografer atau revisi. <span class=\"text-highlight\">Langsung tes di Ads</span>."
+                "description": "Tidak nunggu editor. <span class=\"text-highlight\">Langsung bisa dipakai iklan</span>."
             }
         ]
     },
     "comparison": {
-        "title": "Pendekatan yang Berbeda",
+        "title": "Perbedaannya di Sini",
         "table": {
             "headers": [
                 "Fokus",
-                "Tool Foto Produk",
+                "Foto Produk Biasa",
                 "Adsmakr"
             ],
             "rows": [
                 {
                     "factor": "Tujuan",
-                    "agency": "Foto terlihat profesional",
-                    "adsmakr": "<span class=\"text-highlight\">Visual siap diuji di iklan</span>"
+                    "agency": "Sekadar kelihatan bagus",
+                    "adsmakr": "<span class=\"text-highlight\">Siap buat iklan</span>"
                 },
                 {
-                    "factor": "Pendekatan",
-                    "agency": "Satu visual final",
-                    "adsmakr": "<strong>Banyak variasi untuk testing</strong>"
+                    "factor": "Jumlah",
+                    "agency": "Satu foto",
+                    "adsmakr": "<strong>Banyak pilihan</strong>"
                 },
                 {
-                    "factor": "Risiko Salah",
+                    "factor": "Kalau Salah",
                     "agency": "Buang waktu & biaya",
-                    "adsmakr": "<span class=\"text-highlight\">Tinggal generate ulang</span>"
+                    "adsmakr": "<span class=\"text-highlight\">Tinggal ulang</span>"
                 }
             ]
         }
     },
     "bonuses": {
         "tag": "Bonus",
-        "title": "Biar Iklan Siap Jelang Ramadan",
+        "title": "Biar Siap Jualan Ramadan",
         "subtitlePre": "Total value",
         "subtitleValue": "Rp 799.000",
         "subtitlePost": ", sudah termasuk.",
         "items": [
             {
                 "title": "CustomGPT Copywriting",
-                "desc": "Bantu susun <strong>caption & headline iklan</strong> lebih cepat.",
+                "desc": "Bantu bikin <strong>caption iklan</strong> lebih cepat.",
                 "value": "Rp 500.000"
             },
             {
                 "title": "Marketing Prompt Pack Ramadan",
-                "desc": "Ide visual & angle promo untuk <span class=\"text-highlight\">momentum Ramadan</span>.",
+                "desc": "Ide konten & promo <span class=\"text-highlight\">khusus Ramadan</span>.",
                 "value": "Rp 299.000"
             }
         ]
     },
     "pricing": {
         "tag": "Early Access",
-        "subtitle": "<strong>Sekali bayar.</strong> Bukan subscription.",
+        "subtitle": "<strong>Sekali bayar.</strong> Tidak bulanan.",
         "title": "Akses Lifetime",
         "originalPrice": "Rp 999.000",
         "priceMain": "74",
@@ -120,23 +120,23 @@
         "priceDetail": "/ lifetime",
         "features": [
             "Unlimited generate",
-            "Visual siap testing iklan",
+            "Siap untuk iklan",
             "Resolusi tinggi",
             "<span class=\"text-highlight\">Lisensi komersial</span>"
         ],
-        "cta": "Mulai Testing Visual",
-        "note": "*Harga bisa berubah setelah early access"
+        "cta": "Mulai Generate",
+        "note": "*Harga bisa berubah"
     },
     "faq": {
         "title": "Pertanyaan Umum",
         "items": [
             {
-                "question": "Ini beda dari tool foto produk lain?",
-                "answer": "Ya. Fokusnya <span class=\"text-highlight\">bukan sekadar bagus</span>, tapi siap dipakai untuk iklan."
+                "question": "Ini buat siapa?",
+                "answer": "Buat <span class=\"text-highlight\">UMKM yang pasang iklan</span>."
             },
             {
                 "question": "Ada batas generate?",
-                "answer": "Tidak ada. <strong>Bebas generate sepuasnya</strong>."
+                "answer": "Tidak ada. <strong>Bebas sepuasnya</strong>."
             },
             {
                 "question": "Sekali bayar?",
@@ -145,12 +145,12 @@
         ]
     },
     "stickyBar": {
-        "message": "Siapkan visual iklan sebelum budget Ramadan bocor",
-        "cta": "Mulai Generate",
+        "message": "Siapkan foto iklan sebelum Ramadan",
+        "cta": "Mulai Sekarang",
         "ticker": [
             "Sekali Bayar",
             "Unlimited",
-            "Siap Ads",
+            "Siap Iklan",
             "Lisensi Aman"
         ]
     }
