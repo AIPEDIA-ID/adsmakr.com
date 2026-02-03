@@ -64,36 +64,49 @@ NEVER use flat buttons. Use this exact 3D style for all CTAs:
 - **Body**: `.text-body-sm` -> `text-[14px]`, `text-gray-600`, `leading-1.6`.
 
 ## 3. Core Layout Architecture (STRICT)
-**You must follow this HTML structure for EVERY section to ensure proper accumulation and centering.**
-Do not create full-width text that spans the edge of the screen.
+**You must follow these rules to ensure the "Adsmakr" look works perfectly on Mobile.**
 
-### A. The "Section-Container" Pattern
-Every section must follow this specific nesting:
+### A. Mobile-First & Centered Philosophy (CRITICAL)
+1.  **Default State = One Column Stack**: All layouts MUST start as a single column (`grid-cols-1` or `flex-col`) centered stack. NEVER start with `flex-row` on mobile unless it's a micro-component (like a badge).
+2.  **Padding is King**: Mobile screens MUST have `px-6` (24px) horizontal padding on the container. NO element (except full-width background images) should touch the screen edge.
+3.  **Centered Text**: On mobile, headings and subheadings are `text-center`.
+4.  **Max-Width Discipline**: Never let text span the full 100% width of a large screen. Always constrain it.
+
+### B. The "Section-Container" Pattern
+Every section must follow this specific nesting to guarantee centering and responsiveness:
+
 ```html
 <section class="py-16 md:py-24 relative overflow-hidden">
-  <!-- 1. Global Wrapper (Constrains width) -->
-  <div class="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
+  <!-- 1. Global Wrapper (Constrains width + Mobile Padding) -->
+  <!-- IMPERATIVE: px-6 is MANDATORY for mobile safety zone. Increases to px-10 on Desktop. -->
+  <div class="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
     
     <!-- 2. Centered Header (MANDATORY for Titles) -->
+    <!-- IMPERATIVE: max-w-3xl + mx-auto ensures it doesn't stretch ugly on Desktop -->
     <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
       <span class="...badge...">[Badge]</span>
-      <h2 class="...font-black text-4xl...">[Title]</h2>
+      <h2 class="...font-black text-4xl leading-tight...">[Title]</h2>
       <p class="...text-subtitle mx-auto...">[Subtitle]</p>
     </div>
 
-    <!-- 3. The Content Grid/Layout -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-       <!-- ... -->
+    <!-- 3. The Content Grid/Layout (Mobile First Strategy) -->
+    <!-- RULE: Start grid-cols-1 (Stack), THEN move to md:grid-cols-2/3 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+       <!-- Content Items -->
     </div>
 
   </div>
 </section>
 ```
 
-### B. Centered Text Rules
-- **NEVER** allow paragraph text to stretch full width.
-- **ALWAYS** wrap centered text blocks in `max-w-2xl` or `max-w-3xl` + `mx-auto`.
-- **Headlines**: Must be `text-center` with `text-balance` (if available) or `mx-auto`.
+### C. Centered Text & Whitespace Rules
+- **Whitespace Strategy (The "Empty Margin" Rule)**:
+    - We purposefully create empty space on the sides of text containers to improve readability and focus.
+    - **Implementation**: STRICTLY use `max-w-xl` or `max-w-2xl` combined with `mx-auto` for all centered text blocks.
+    - **Visual Result**: This guarantees that on wide screens, there are significant "empty margins" (margin kosong) on the left and right of the text.
+- **Headlines**: Must be `text-center`. Use `mx-auto` to center the element itself within its container.
+- **Subtitles**: Must use `mx-auto` and `text-center`.
+- **Vertical Spacing**: Ensure adequate margin-bottom (`mb-6` to `mb-12`) between headers and content grids.
 
 ## 4. Component Library & Styles
 ### A. "Pop-3D" Button (CRITICAL)
@@ -142,7 +155,7 @@ Unless requested otherwise, follow this structure:
 
 ## 6. Technical Implementation Rules
 1.  **Code Output**: Full HTML/Tailwind or Astro.
-2.  **Mobile First**: `grid-cols-1` -> `md:grid-cols-2`.
+2.  **Mobile First**: `grid-cols-1` -> `md:grid-cols-2`. Always use `px-6` for mobile containers.
 3.  **Interaction Scripts**: `IntersectionObserver` for animations.
 4.  **Copy**: "Copywriting Jualan" (Persuasive).
 5.  **Variables**: Use `:root` for colors.
