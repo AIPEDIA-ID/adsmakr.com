@@ -32,48 +32,48 @@
                 ]
             },
             {
-                "niche": "F&B Ramadan",
+                "niche": "Cosmetics",
                 "tag": "Visual Konsisten",
-                "inputImage": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop",
+                "inputImage": "/assets/samples/cosmetic/input_image.webp",
                 "results": [
                     {
                         "filter": "",
-                        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop"
+                        "image": "/assets/samples/cosmetic/variant_1.png"
                     },
                     {
                         "filter": "saturate-150",
-                        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop"
+                        "image": "/assets/samples/cosmetic/variant_2.png"
                     },
                     {
                         "filter": "brightness-110",
-                        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop"
+                        "image": "/assets/samples/cosmetic/variant_3.png"
                     },
                     {
                         "filter": "contrast-125",
-                        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=400&auto=format&fit=crop"
+                        "image": "/assets/samples/cosmetic/variant_4.png"
                     }
                 ]
             },
             {
-                "niche": "Beauty",
+                "niche": "F & B (Sop Daging)",
                 "tag": "Clean & Rapi",
-                "inputImage": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop",
+                "inputImage": "/assets/samples/fnb/input_image.jpg",
                 "results": [
                     {
                         "filter": "",
-                        "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop"
+                        "image": "/assets/samples/fnb/variant_1.png"
                     },
                     {
                         "filter": "brightness-105",
-                        "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop"
+                        "image": "/assets/samples/fnb/variant_2.png"
                     },
                     {
                         "filter": "saturate-150",
-                        "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop"
+                        "image": "/assets/samples/fnb/variant_3.png"
                     },
                     {
                         "filter": "contrast-110",
-                        "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop"
+                        "image": "/assets/samples/fnb/variant_4.png"
                     }
                 ]
             }
@@ -83,11 +83,11 @@
         "modes": [
             {
                 "title": "Sticker Pop",
-                "image": "https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=400&auto=format&fit=crop"
+                "image": "/assets/visual_style/sticker.png"
             },
             {
                 "title": "Elegant Studio",
-                "image": "https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=400&auto=format&fit=crop"
+                "image": "/assets/visual_styles/elegant_studio.png"
             },
             {
                 "title": "AI Model",
