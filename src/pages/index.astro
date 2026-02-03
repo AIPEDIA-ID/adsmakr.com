@@ -5,9 +5,9 @@ import screenShot from "../data/screen_shot.json";
 ---
 
 <Layout title={copy.pageTitle}>
-	<main class="px-6 md:px-10 py-16 pb-32 flex flex-col gap-16">
+	<main class="px-6 md:px-10 py-14 pb-24 flex flex-col gap-14">
 		<!-- [HERO: PAS - PROBLEM & PROMISE] -->
-		<section class="text-center pt-8">
+		<section class="text-center pt-8 hero-texture">
 			<div
 				class="inline-block px-4 py-1.5 rounded-full bg-yellow-50 border border-yellow-200 text-yellow-800 text-xs font-bold tracking-wide mb-6 uppercase shadow-sm"
 				set:html={copy.hero.warningTag}
@@ -17,13 +17,13 @@ import screenShot from "../data/screen_shot.json";
 				set:html={copy.hero.title}
 			/>
 			<p
-				class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed"
+				class="text-xl text-gray-800 font-medium mb-8 max-w-2xl mx-auto leading-relaxed"
 				set:html={copy.hero.description}
 			/>
 			<div class="max-w-xs mx-auto">
 				<button
 					onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})"
-					class="btn-3d w-full group"
+					class="btn-3d w-full group btn-shine"
 				>
 					<span class="text-lg">{copy.hero.cta}</span>
 					<i
@@ -114,7 +114,7 @@ import screenShot from "../data/screen_shot.json";
 			</div>
 			<div class="text-center mt-8">
 				<p
-					class="text-xs font-bold text-gray-400 uppercase tracking-widest border-2 border-dashed border-gray-200 inline-block px-4 py-2 rounded-full"
+					class="text-xs font-bold text-primary-600 uppercase tracking-widest border-2 border-dashed border-primary-200 bg-primary-50 inline-block px-4 py-2 rounded-full animate-attention"
 				>
 					{copy.showcase.footer}
 				</p>
@@ -151,7 +151,7 @@ import screenShot from "../data/screen_shot.json";
 			</div>
 			<div class="text-center mt-8">
 				<p
-					class="text-xs font-bold text-gray-400 uppercase tracking-widest border-2 border-dashed border-gray-200 inline-block px-4 py-2 rounded-full"
+					class="text-xs font-bold text-primary-600 uppercase tracking-widest border-2 border-dashed border-primary-200 bg-primary-50 inline-block px-4 py-2 rounded-full animate-attention"
 				>
 					{copy.gallery.footer}
 				</p>
@@ -254,6 +254,74 @@ import screenShot from "../data/screen_shot.json";
 			.animate-zoom-in {
 				animation: zoomIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 			}
+			.hero-texture {
+				position: relative;
+				isolation: isolate;
+			}
+			.hero-texture::before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				z-index: -1;
+				background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+				background-size: 24px 24px;
+				mask-image: linear-gradient(
+					to bottom,
+					black 40%,
+					transparent 100%
+				);
+				-webkit-mask-image: linear-gradient(
+					to bottom,
+					black 40%,
+					transparent 100%
+				);
+				opacity: 0.5;
+			}
+			@keyframes pulseFade {
+				0%,
+				100% {
+					opacity: 1;
+					transform: scale(1);
+				}
+				50% {
+					opacity: 0.7;
+					transform: scale(0.98);
+				}
+			}
+			.animate-pulse-fade {
+				animation: pulseFade 6s ease-in-out infinite;
+			}
+			/* Button Shine Effect */
+			.btn-shine {
+				overflow: hidden; /* Ensure shine doesn't spill */
+			}
+			.btn-shine::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: -100%;
+				width: 50%;
+				height: 100%;
+				background: linear-gradient(
+					to right,
+					rgba(255, 255, 255, 0) 0%,
+					rgba(255, 255, 255, 0.3) 50%,
+					rgba(255, 255, 255, 0) 100%
+				);
+				transform: skewX(-25deg);
+				animation: shine 5s infinite;
+			}
+			@keyframes shine {
+				0% {
+					left: -100%;
+				}
+				15% {
+					left: 200%;
+				}
+				100% {
+					left: 200%;
+				}
+			}
 		</style>
 
 		<!-- [VALUES: AGITATE & SOLUTION] -->
@@ -293,43 +361,46 @@ import screenShot from "../data/screen_shot.json";
 		</section>
 
 		<!-- [COMPARISON] -->
-		<section>
-			<h2 class="section-title text-center mb-8">
+		<section class="max-w-4xl mx-auto">
+			<h2 class="section-title text-center mb-10">
 				{copy.comparison.title}
 			</h2>
 			<div
-				class="border-4 border-gray-900 rounded-2xl overflow-hidden shadow-[8px_8px_0px_0px_rgba(17,24,39,1)]"
+				class="bg-white rounded-3xl border border-gray-200 shadow-md shadow-gray-200/50 overflow-hidden"
 			>
-				<table class="w-full text-left">
-					<thead
-						class="bg-gray-900 text-white text-[10px] font-black tracking-widest text-center"
-					>
-						<tr>
-							<th class="p-4 border-r border-white/10"
-								>{copy.comparison.table.headers[0]}</th
-							>
+				<table class="w-full text-left border-collapse">
+					<thead>
+						<tr class="bg-gray-50 border-b border-gray-100">
 							<th
-								class="p-4 border-r border-white/10 text-gray-400"
-								>{copy.comparison.table.headers[1]}</th
+								class="p-1 text-xs font-extrabold uppercase tracking-widest text-gray-400 w-1/4"
 							>
-							<th class="p-4 bg-primary-600"
-								>{copy.comparison.table.headers[2]}</th
+								{copy.comparison.table.headers[0]}
+							</th>
+							<th
+								class="p-2 text-xs font-extrabold uppercase tracking-widest text-gray-400 text-center w-1/3"
 							>
+								{copy.comparison.table.headers[1]}
+							</th>
+							<th
+								class="p-1 text-xs font-extrabold uppercase tracking-widest text-primary-600 text-center w-1/3 bg-primary-50/30"
+							>
+								{copy.comparison.table.headers[2]}
+							</th>
 						</tr>
 					</thead>
-					<tbody class="text-[12px] font-bold text-center bg-white">
+					<tbody>
 						{
 							copy.comparison.table.rows.map((row) => (
-								<tr class="border-b border-gray-100 last:border-0">
-									<td class="p-4 text-left font-black text-[10px] text-gray-500">
+								<tr class="border-b border-gray-50 last:border-0 hover:bg-gray-50/50 transition-colors">
+									<td class="p-5 font-bold text-gray-700 text-sm md:text-base">
 										{row.factor}
 									</td>
-									<td class="p-4 text-red-500 line-through decoration-2">
+									<td class="p-5 text-center text-gray-400 font-medium text-sm md:text-base line-through decoration-red-300 decoration-2">
 										{row.agency}
 									</td>
-									<td class="p-4 text-primary-600 bg-primary-50/50">
+									<td class="p-5 text-center bg-primary-50/10">
 										<div
-											class="text-primary-600 bg-primary-50/50 p-2 md:p-4 font-bold rounded-lg border border-primary-100 shadow-sm"
+											class="inline-block px-4 py-2 bg-primary-50 text-primary-700 font-bold rounded-lg text-sm md:text-base shadow-sm border border-primary-100"
 											set:html={row.adsmakr}
 										/>
 									</td>
@@ -343,46 +414,42 @@ import screenShot from "../data/screen_shot.json";
 
 		<!-- [BONUSES] -->
 		<section
-			class="bg-white border-2 border-dashed border-gray-300 rounded-3xl p-8 md:p-12 relative overflow-hidden"
+			class="bg-white border-2 border-dashed border-gray-300 rounded-3xl p-4 md:p-8 relative overflow-hidden"
 		>
-			<div class="text-center mb-8">
+			<div class="text-center mb-6">
 				<span
-					class="bg-red-100 text-red-600 px-3 py-1 rounded text-[10px] font-black tracking-widest mb-4 inline-block border border-red-200"
+					class="bg-red-100 text-red-600 px-3 py-1.5 rounded-full text-[10px] font-black tracking-widest mb-4 inline-block border border-red-200 uppercase"
 				>
 					{copy.bonuses.tag}
 				</span>
-				<p
-					class="text-subtitle !max-w-md mx-auto mb-4"
-					set:html={copy.pricing.subtitle}
-				/>
 				<h2
-					class="text-4xl md:text-5xl font-black text-gray-900 mb-8 tracking-tight"
-					set:html={copy.pricing.title}
+					class="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight leading-tight text-balance"
+					set:html={copy.bonuses.title}
 				/>
-				<p class="text-body-sm max-w-lg mx-auto">
+				<p class="text-body-pro max-w-lg mx-auto text-gray-600">
 					{copy.bonuses.subtitlePre}
-					<strong class="text-gray-900"
+					<strong class="text-red-500 bg-red-50 px-2 rounded"
 						>{copy.bonuses.subtitleValue}</strong
 					>{copy.bonuses.subtitlePost}
 				</p>
 			</div>
 
-			<div class="grid gap-4 md:grid-cols-2">
+			<div class="grid gap-4">
 				{
 					copy.bonuses.items.map((bonus) => (
-						<div class="bg-gray-50 border border-gray-100 p-5 rounded-xl">
-							<div class="flex justify-between items-start mb-2">
+						<div class="bg-gray-50 border border-gray-200 p-6 rounded-2xl flex flex-col gap-2 relative overflow-hidden group hover:border-red-200 transition-colors">
+							<div class="flex justify-between items-start gap-4">
 								<h3
-									class="font-black text-primary-600 text-sm tracking-wide"
+									class="font-extrabold text-gray-900 text-lg leading-tight"
 									set:html={bonus.title}
 								/>
 								<span
-									class="bg-white border border-gray-200 text-[9px] px-2 py-0.5 rounded text-gray-600 font-bold"
+									class="bg-white border border-gray-200 text-[10px] px-2 py-1 rounded font-bold text-gray-500 shrink-0 shadow-sm whitespace-nowrap"
 									set:html={bonus.value}
 								/>
 							</div>
 							<p
-								class="text-xs font-bold text-gray-600 leading-relaxed"
+								class="text-sm font-medium text-gray-600 leading-relaxed"
 								set:html={bonus.desc}
 							/>
 						</div>
@@ -424,23 +491,30 @@ import screenShot from "../data/screen_shot.json";
 							{copy.pricing.originalPrice}
 						</span>
 						<div
-							class="flex items-start justify-center gap-1 text-gray-900"
+							class="flex flex-col items-center text-gray-900 mt-2"
 						>
-							<span class="text-2xl font-black mt-3">Rp</span>
-							<span
-								class="text-[80px] font-black tracking-tighter leading-none"
-							>
-								{copy.pricing.priceMain}
-							</span>
-							<div class="flex flex-col items-start mt-3">
-								<span class="text-3xl font-black leading-none"
-									>{copy.pricing.priceUnit}</span
-								>
+							<div class="flex items-baseline leading-none gap-1">
 								<span
-									class="text-[10px] font-bold text-gray-400 tracking-wider"
-									>{copy.pricing.priceDetail}</span
+									class="text-xl md:text-2xl font-extrabold text-gray-400/80"
 								>
+									Rp
+								</span>
+								<span
+									class="text-[4.5rem] md:text-[5.5rem] font-black tracking-tighter text-gray-900 -my-3"
+								>
+									{copy.pricing.priceMain}
+								</span>
+								<span
+									class="text-2xl md:text-3xl font-black text-gray-900"
+								>
+									{copy.pricing.priceUnit}
+								</span>
 							</div>
+							<p
+								class="text-[10px] md:text-xs font-bold text-gray-400 tracking-[0.25em] uppercase mt-1"
+							>
+								{copy.pricing.priceDetail}
+							</p>
 						</div>
 					</div>
 
