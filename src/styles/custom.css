@@ -74,6 +74,16 @@ body {
     border-right: 1px solid #f3f4f6;
 }
 
+@media (min-width: 768px) {
+    .app-container {
+        max-width: 768px;
+        border-left: none;
+        border-right: none;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+        /* Optional: Adds subtle separation since borders are gone */
+    }
+}
+
 /* Balanced Typography */
 .text-hero {
     font-size: clamp(2rem, 5vw, 2.5rem);
@@ -203,15 +213,17 @@ details summary::-webkit-details-marker {
     position: absolute;
     inset: 0;
     z-index: -1;
-    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
+    /* Darker & Larger Dots */
     background-size: 24px 24px;
     mask-image: linear-gradient(to bottom,
-            black 40%,
+            black 60%,
             transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom,
-            black 40%,
+            black 60%,
             transparent 100%);
-    opacity: 0.5;
+    opacity: 0.7;
+    /* Increased Visibility */
 }
 
 @keyframes pulseFade {
