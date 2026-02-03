@@ -156,9 +156,9 @@ NEVER use flat buttons. Use this exact 3D style for all CTAs:
 Unless requested otherwise, follow this structure:
 
 1.  **Sticky Promo Bar (MOBILE CRITICAL)**: 
-    - **Mobile First**: MUST start as `flex-col` (stacked). Text on top, Button full-width below. 
-    - **Desktop**: Only switch to `md:flex-row md:items-center md:h-6` on larger screens.
-    - **Styling**: `py-3 px-4` (Mobile) -> `md:py-3` (Desktop). ensure `h-auto` on mobile, do NOT force fixed height.
+    - **Layout**: STRICTLY Single Line (`flex-row`). NEVER stack vertically on mobile (it looks "asu").
+    - **Mobile Handling**: If text is long, use Marquee/Scroll. Button must remain visible and shrinking prohibited (`shrink-0`).
+    - **Sizing**: Keep height compact (`h-auto` or small fixed height). Do NOT overload mobile screen space.
 2.  **Hero Section**: Centered Hook + Headline + Subheadline + CTA + Social Proof.
 3.  **Showcase (Magic Grid)**: Centered Title -> Comparison Grid.
 4.  **Gallery**: Grid layout.
